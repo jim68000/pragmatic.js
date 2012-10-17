@@ -20,7 +20,7 @@
 * Use short and concise expressions
 * Use duck-typing and rely on unit tests rather than testing for types of arguments
 * Prefer functional programming over `for` and `while` loops, unless performance is a concern (see above)
-* No curly braces for single-line control flow statements such as `if` & friends
+* No curly braces for single-line control flow statements such as `if` & friends, but always include braces if you split it into two lines, even if there's only one statement in the block
 * Always use semicolons where the spec says a semicolon *could* be put. Optional 
 semi-colon coding increases the chance you will make a mistake, and places a higher burden on your fellow maintainers.
 * Which means you don't need to put a single semicolon _before_ statements that start with `(` or `[` as the previous line ended with one
