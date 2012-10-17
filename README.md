@@ -19,11 +19,11 @@
 ### Statements & expressions:
 * Use short and concise expressions
 * Use duck-typing and rely on unit tests rather than testing for types of arguments
-* Prefer functional programming over `for` and `while` loops
+* Prefer functional programming over `for` and `while` loops, unless performance is a concern (see above)
 * No curly braces for single-line control flow statements such as `if` & friends
-* Don't write [semicolons that are optional][optional]
-* Put a single semicolon _before_ statements that start with `(` or `[`
-  (see above article as for why it's needed)
+* Always use semicolons where the spec says a semicolon *could* be put. Optional 
+semi-colon coding increases the chance you will make a mistake, and places a higher burden on your fellow maintainers.
+* Which means you don't need to put a single semicolon _before_ statements that start with `(` or `[` as the previous line ended with one
 * Use ternary when it is simple enough as to not make code difficult to understand
 * Do not use `try` and `catch` unless absolutely required (like an API forcing you to do so)
 
