@@ -94,7 +94,11 @@ From Slifty:
 
 ### Conventions
 Chain whenever possible
+
 In situations where order is functionally irrelevant, lists of things should be sorted alphabetically. This means classes, constants, lists of lists (e.g. this sentence), switch statements, variable declarations, etc.
+
 Variable names are camelCase. This includes acronyms -- "ID" is "Id" and "URL" is "Url"
+
 An attribute can only be called "id" if it is the id of that object. If it refers to the id of another object it should be "[objectType]Id" e.g. "gameId" or "playerId"
+
 For the sake of simplicity, function and class names concerning communication are always from the perspective of the server, even in client code. "In" means the message is going from client->server ("into" the server). "Out" means the message is going server->client ("out" of the server).
